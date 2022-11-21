@@ -1,0 +1,485 @@
+/* css file for every linked page from home page on personal website */
+
+/*
+/*
+
+  Colour Scheme (from lighter colour to darker)
+  #cff09e (yellow-green)
+  #a8dba8 (light green)
+  #79bd9a (aqua)
+  #3b8686 (blue green)
+  #0b486b (teal)
+
+  others
+  lightgrey for text colour
+  #222222 dark background colour
+
+*/
+
+/* top-level rules */
+
+* { box-sizing: border-box }
+
+html, body {
+  margin: 0;
+  min-height: 100vh;
+  color: lightgrey;
+  background-color: #222222;
+}
+html * {
+  font-family: 'Cuprum', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  position: relative;
+  overflow: scroll;
+}
+
+#mainer {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  border: 2px lightgrey solid;
+  border-radius: 25px;
+  box-shadow: lightgrey 0px 0px 7px 7px;
+}
+
+.pure-g {
+  width: 100%;
+}
+
+
+/* general formatting */
+
+.wrapper {
+  position: absolute;
+  width: 5em;
+  transform: translate(50%, -25%);
+}
+
+h1 {
+  text-align: left;
+  font-style: italic;
+  width: 10%;
+  color: lightgrey;
+  font-size: 3em;
+  line-height: .69em; /* mlib */
+
+  /* Safari */
+  -webkit-transform: rotate(45deg);
+  /* Firefox */
+  -moz-transform: rotate(45deg);
+  /* IE */
+  -ms-transform: rotate(45deg);
+  /* Opera */
+  -o-transform: rotate(45deg);
+}
+h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+h1 a:hover span {
+  color: #79bd9a;
+  text-shadow: -3px -1px #0b486b;
+}
+h1 a:hover span:first-child {
+  text-decoration: overline;
+}
+h1 a:hover span:last-child {
+  text-decoration: underline;
+}
+h1 a:hover span:first-child.dot {
+  text-decoration: none;
+}
+h1 a:hover span:last-child.dot {
+  text-decoration: none;
+}
+a > span {
+  display: inline-block;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+h2 a {
+  font-size: 1.2em;
+}
+
+h3 {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.4em;
+  margin-top: -2em;
+}
+
+/* general classes to be used anywhere */
+
+.dot {
+  color: #3b8686;
+}
+.bold {
+  font-size: 120%;
+}
+.ital {
+  font-style: italic;
+}
+.right_just {
+  text-align: right;
+}
+.tab {
+  text-indent: 1em;
+}
+.link a {
+  color: #cff09e;
+  text-decoration: none;  
+}
+.link a:hover {
+  color: #79bd9a;
+  text-shadow: -1px -1px #3b8686;
+}
+
+
+/* deals exclusively with resume page */
+
+.res_main_body {
+  padding-top: 9em;
+  padding-left: 2.5em;
+}
+.res_main_body * {
+  letter-spacing: 1px;
+}
+.res_main_body p { /* this causes the slideToggle to flow smoothly (no blips) */
+  display: inline-block;
+  margin: -0.1em;
+}
+
+.resume_pdf {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  text-align: center;
+  transform: translateY(250%);
+}
+
+.heading {
+  float: left;
+  width: 100%;
+  border: 1px lightgrey dotted;
+}
+.heading h2 {
+  font-size: 2.5em;
+}
+
+.expand_button {
+  float: left;
+  transform: translate(-50%, 50%);
+  font-size: 1.5em;
+  padding-left: 4%;
+  padding-right: 4%;
+  color: #cff09e;
+  background-color: #79bd9a;
+  border: 2px #3b8686 outset;
+  border-radius: 10px;
+}
+.expand_button:hover {
+  box-shadow: lightgrey 0 0 16px 10px;
+  background-color: #3b8686;
+  border: 2px lightgrey outset;
+}
+
+.content {
+  display: none;
+  width: 100%;
+  padding-bottom: 1em;
+}
+.inner_heading {
+  padding-top: 1.9em;
+}
+.right_just {
+  position: relative;
+  padding-top: 1.9em; /* must equal the padding from inner heading class */
+}
+
+ul.dash {
+  list-style: none;
+  padding-left: 1em;
+}
+ul.dash li {
+  padding: 0.75em;
+}
+ul.dash > li:before {
+  display: inline-block;
+  float: left;
+  content: '---';
+  font-weight: 700;
+  width: 1em;
+  letter-spacing: -2.5px;
+  margin-left: -1.8em;
+}
+
+.right_col {
+  letter-spacing: 1px;
+  padding-left: 2%;
+  padding-top: 5%;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1.2em;
+}
+.right_col ul.dash li {
+  padding-left: 1.5em;
+}
+
+ul.courses_list {
+  padding-top: 0.75em;
+}
+
+.references_heading {
+  position: relative;
+  padding-top: 1.5em;
+}
+
+#first_bullet_point {
+  display: none;
+}
+#first_bullet_point_alt {
+  display: none;
+}
+
+
+/* deals exclusively with about page */
+
+.photo_banner {
+  padding-top: 8.25em;
+}
+.about_main_body {
+  letter-spacing: 1px;
+  padding-top: 1em;
+  padding-bottom: 4em;
+}
+
+
+/* deals exclusively with contact page */
+
+.cont_main_body {
+  letter-spacing: 1px;
+  padding-top: 8em;
+  padding-bottom: 4em;
+}
+h2.tab {
+  padding-bottom: 1.5em;
+}
+
+#email_link {
+  display: none;
+}
+#email_link_alt {
+  display: none;
+}
+
+
+/* deals exclusively with menu page */
+
+.menu_main_body {
+  letter-spacing: 1px;
+  padding-top: 8em;
+  padding-bottom: 4em;
+}
+
+#squareit {
+  display: flex;
+  border: 2px lightgrey solid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#new_sel_num {
+  width: 10%;
+  color: black;
+}
+
+#refresh_selection {
+  color: black;
+  font-weight: 600;
+}
+
+.selection {
+  font-size: 1.75em;
+  position: absolute;
+  border: 2px #3b8686 outset;
+  border-radius: 10px;
+  margin: auto;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: #79bd9a;
+  display: none;
+}
+
+.selection a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #cff09e  ;
+}
+.selection a:link visited {
+  color: #cff09e;
+}
+.selection:hover {
+  border: 2px lightgrey outset;
+  border-radius: 10px;
+  box-shadow: lightgrey 0 0 16px 10px;
+  background-color: #3b8686;
+  color: lightgrey;
+}
+.selection:active {
+  color: lightgrey;
+}
+
+
+/* formatting of the analog clock */
+
+#analog_clock {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border: 2px lightgrey solid;
+  border-radius: 10px;
+  bottom: 5%;
+  right: 5%;
+  background-color: #0b486b;
+  z-index: 1;
+}
+#clock_face {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  background-color: lightgrey;
+}
+.clock_incr {
+  font-size: 0.75em;
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  color: #222222;
+  background-color: #3b8686;
+}
+#hour_hand {
+  position: absolute;
+  background-color: brown;
+  margin: auto;
+  height: 2px;
+  width: 25%;
+  z-index: 1;
+}
+#minute_hand {
+  position: absolute;
+  background-color: green;
+  margin: auto;
+  height: 2px;
+  width: 35%;
+  z-index: 2;
+}
+#second_hand {
+  position: absolute;
+  background-color: purple;
+  margin: auto;
+  height: 2px;
+  width: 45%;
+  z-index: 3;
+}
+
+
+
+/* media queries */
+
+/* < 1024px */
+@media screen and (max-width: 64em) {
+  h1 {
+    font-size: 2.75em;
+  }
+  .resume_pdf {
+    transform: translateY(125%);
+  }
+  .photo_banner {
+    padding-top: 7.4em;
+  }
+}
+
+/* < 768px */
+@media screen and (max-width: 48em) {
+  .expand_button {
+    width: 2.5em;
+  }
+  .right_just {
+    text-align: left;
+    margin-top: -1.9em; /* must be equal and negative to the padding from inner heading class */
+  }
+  .selection {
+    font-size: 1.1em;
+  }
+  #analog_clock {
+    display: none;
+  }
+}
+
+/* < 568px */
+@media screen and (max-width: 35.5em) {
+  .wrapper {
+    transform: translate(42%, -25%);
+  }
+  h1 {
+    font-size: 2.4em;
+  }
+  .res_main_body {
+    padding-top: 7.5em;
+  }
+  .resume_pdf {
+    font-size: 1em;
+    transform: translateY(100%);
+  }
+  .photo_banner {
+    padding-top: 6.25em;
+  }
+  #new_sel_num {
+    width: 2em;
+  }
+}
+
+/* < 400px */
+@media screen and (max-width: 25em) {
+  .wrapper {
+    transform: translate(31%, -25%);
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  .res_main_body {
+    padding-top: 5em;
+  }
+  .resume_pdf {
+    transform: translateY(50%);
+  }
+  .heading h2 {
+    font-size: 2.1em;
+    line-height: 1.5em;
+  }
+  .photo_banner {
+    padding-top: 4.3em;
+  }
+  .about_main_body {
+    padding-top: 2em;
+  }
+  .cont_main_body {
+    padding-top: 6em;
+  }
+  .menu_main_body {
+    padding-top: 6em;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>EXAMPLE 1</title>
+
+
+    <!-- include base pure.css file -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+
+    <!-- include responsive grids (didn't keep the IE8 fallback) -->
+    <!-- http://purecss.io/start/#responsive-grids -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+
+    <!-- note that you can also do it this way
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/pure@0.6.2(base-min.css+grids-min.css+grids-responsive-min.css+buttons-min.css)">
+
+    -->
+
+
+    <style>
+      .pure-g {
+        outline: 3px solid yellow;
+      }
+
+      .pure-g > div {
+        height: 350px;
+        text-align: center;
+      }
+
+      .pure-g > div:first-child {
+        background-color: lightblue;
+      }
+
+      .pure-g > div:last-child {
+        background-color: salmon;
+      }
+
+      .buttons {
+        padding: 10px 0;
+        outline: 2px white dotted;
+      }
+    </style>
+  </head>
+  <body>
+  <h1>EXAMPLE 1</h1>
+
+    <div class="pure-g">
+        <div class="pure-u-lg-4-5 pure-u-sm-1-2 pure-u-2-3">
+
+          <p>this left panel should go from 4/5 to 1/2 to 2/3</p>
+
+          <br />
+          <div class="buttons">
+            <p>~ buttons ~</p>
+            <a class="pure-button" href="#">A Pure Button</a>
+            <a class="pure-button pure-button-active" href="#">An Active Button</a>
+            <a class="pure-button pure-button-primary" href="#">A Primary Button</a>
+          </div>
+        </div>
+
+        <div class="pure-u-lg-1-5 pure-u-sm-1-2 pure-u-1-3">
+
+          <p>this right panel should go from 1/5 to 1/2 to 1/3</p>
+
+        </div>
+    </div>
+
+  </body>
+</html>

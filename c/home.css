@@ -1,0 +1,272 @@
+/* css file for only the home page on personal website */
+
+/*
+
+  Colour Scheme (from lighter colour to darker)
+  #cff09e (yellow-green)
+  #a8dba8 (light green)
+  #79bd9a (aqua)
+  #3b8686 (blue green)
+  #0b486b (teal)
+
+  others
+  lightgrey for text colour
+  #222222 dark background colour
+
+*/
+
+/* top-level rules */
+
+* { box-sizing: border-box }
+
+html, body {
+  font-family: 'Cuprum', 'Arial Narrow', Arial, sans-serif;
+  margin: 0px;
+  height: 100%;
+  background-color: #222222;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+#mainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 2px lightgrey solid;
+  border-radius: 25px;
+  box-shadow: lightgrey 0px 0px 7px 7px;
+}
+
+#menuer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 20%;
+  float: left;
+}
+
+
+#squareit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  width: 50%;
+  color: lightgrey;
+  font-size: 5em;
+  line-height: .69em; /* mlib */
+  /* Safari */
+  -webkit-transform: rotate(45deg);
+  /* Firefox */
+  -moz-transform: rotate(45deg);
+  /* IE */
+  -ms-transform: rotate(45deg);
+  /* Opera */
+  -o-transform: rotate(45deg);
+}
+
+h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 a:hover span {
+  color: #3b8686;
+  text-shadow: -3px -1px #0b486b;
+}
+
+h1 a:hover span:first-child {
+  text-decoration: overline;
+}
+
+h1 a:hover span:last-child {
+  text-decoration: underline;
+}
+
+a > span {
+  display: inline-block;
+  width: 100%;
+}
+
+h1 {
+  color: lightgrey;
+}
+
+.dot {
+  color: #3b8686;
+}
+
+
+.selection {
+  font-size: 1.75em;
+  position: absolute;
+  border: 2px #3b8686 outset;
+  border-radius: 10px;
+  margin: auto;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: #79bd9a;
+  display: none;
+}
+
+.selection a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #cff09e  ;
+}
+.selection a:link visited {
+  color: #cff09e;
+}
+.selection:hover {
+  border: 2px lightgrey outset;
+  border-radius: 10px;
+  box-shadow: lightgrey 0 0 16px 10px;
+  background-color: #3b8686;
+  color: lightgrey;
+}
+.selection:active {
+  color: lightgrey;
+}
+
+
+#analog_clock {
+  position: fixed;
+  width: 125px;
+  height: 125px;
+  border: 2px lightgrey solid;
+  border-radius: 10px;
+  bottom: 5%;
+  right: 5%;
+  background-color: #0b486b;
+  z-index: 1;
+}
+#clock_face {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  background-color: lightgrey;
+}
+.clock_incr {
+  font-size: 0.75em;
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  color: #222222;
+  background-color: #3b8686;
+}
+#hour_hand {
+  position: absolute;
+  background-color: brown;
+  margin: auto;
+  height: 2px;
+  width: 25%;
+  z-index: 1;
+}
+#minute_hand {
+  position: absolute;
+  background-color: green;
+  margin: auto;
+  height: 2px;
+  width: 35%;
+  z-index: 2;
+}
+#second_hand {
+  position: absolute;
+  background-color: purple;
+  margin: auto;
+  height: 2px;
+  width: 45%;
+  z-index: 3;
+}
+
+
+/* media queries */
+
+/* width < 888px */
+@media screen and (max-width: 55.5em) {
+  #analog_clock {
+    width: 100px;
+    height: 100px;
+  }
+  h1 {
+    font-size: 4.5em;
+  }
+  .selection {
+    font-size: 1.5em;
+  }
+}
+
+/* width < 568px */
+@media screen and (max-width: 35.5em) {
+  h1 {
+    font-size: 3.25em;
+  }
+  .selection {
+    font-size: 1.1em;
+  }
+}
+
+/* width < 400px */
+@media screen and (max-width: 25em) {
+  .wrapper {
+    transform: translateY(4%);
+  }
+  h1 {
+    font-size: 1.75em;
+  }
+  #analog_clock {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+/* height < 568px */
+@media screen and (max-height: 35.5em) {
+  #analog_clock {
+    width: 100px;
+    height: 100px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  .selection {
+    font-size: 1.4em;
+  }
+}
+
+/* height < 400px */
+@media screen and (max-height: 25em) {
+  h1 {
+    font-size: 1.75em;
+  }
+  .selection {
+    font-size: 1em;
+  }
+}

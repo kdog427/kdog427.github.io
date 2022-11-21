@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>My Menu</title>
+  <meta name="description" content="Kevin Craig's Menu">
+  <meta name="author" content="KEVIN CRAIG">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:700,700i" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/pure@0.6.1(base-min.css+grids-min.css)">
+  <link rel="stylesheet" href="c/style.css">
+
+  <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="scripts/menu.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="shortcut icon" href="images/favicon.ico" />
+
+</head>
+<body>
+
+  <div id="mainer">
+    <div class="pure-g">
+      <div class="pure-u-1-6">
+      	<div class="wrapper">
+
+          <h1>
+            <a href="http://kevinmmcraig.ca">
+              <!--  any spaces between the <span> elements will ruin the layout
+                    good: "<span>ke</span><span>vin</span>"
+                    bad:  "<span>ke</span> <span>vin</span>"
+              -->
+
+              <span>KEVIN</span
+              ><span>MMCR</span
+              ><span>AIG<span class="dot">'</span>S</span
+              ><span>MENU</span>
+            </a>
+          </h1>
+
+      	</div> <!-- end of .wrapper -->
+      </div>
+
+      <div class="menu_main_body pure-u-2-3">
+        <div>
+          <p>This page is to show how my selection menu can adapt to however many links are required or wanted.</p>
+          <p>Please enter in the amount of links you want to appear in the selection circle below:</p>
+          <p>
+            <input type="text" id="new_sel_num" name="selinput" value="6" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+            <br />
+            (keep it between 1 and 500)
+            <br />
+          </p>
+          <p>
+            <input type="button" id="refresh_selection" value="Click here or just hit 'enter'" onClick="new_selection()">
+          </p>
+          <div id="squareit"></div>
+        </div>
+      </div>
+
+      <div class="pure-u-1-6">
+        <div id="analog_clock"></div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>My Resume</title>
+  <meta name="description" content="Kevin Craig's Resume">
+  <meta name="author" content="KEVIN CRAIG">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:700,700i" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/pure@0.6.1(base-min.css+grids-min.css+grids-responsive-min.css+buttons-min.css)">
+  <link rel="stylesheet" href="c/style.css">
+
+  <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="scripts/resume.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="shortcut icon" href="images/favicon.ico" />
+
+</head>
+<body>
+
+  <div id="mainer">
+
+    <div class="resume_pdf pure-g">
+      <div class="pure-u-1-12"></div>
+      <div class="pure-u-md-2-3 pure-u-5-6">
+        <div class="pure-g">
+          <div class="pure-u-lg-1-12 pure-u-1-4"></div>
+          <div class="link pure-u-lg-1-3 pure-u-1-4">
+            <a href="docs/Kevin_Craig_CV_11142022.pdf" target="blank">View my resume</a>
+          </div>
+          <div class="link pure-u-lg-1-3 pure-u-1-4">
+            <a href="docs/Kevin_Craig_CV_11142022.pdf" download>Download my resume</a>
+          </div>
+          <div class="pure-u-1-4"></div>
+        </div>
+      </div>
+      <div class="pure-u-md-1-4 pure-u-1-1"></div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-12">
+      	<div class="wrapper">
+
+          <h1>
+            <a href="http://kevinmmcraig.ca">
+              <!--  any spaces between the <span> elements will ruin the layout
+                    good: "<span>ke</span><span>vin</span>"
+                    bad:  "<span>ke</span> <span>vin</span>"
+              -->
+
+              <span>KEVIN</span
+              ><span>MMCR</span
+              ><span>AIG<span class="dot">'</span>SR</span
+              ><span>ESUME</span>
+            </a>
+          </h1>
+
+      	</div> <!-- end of .wrapper -->
+      </div>
+      <div class="res_main_body pure-u-md-2-3 pure-u-5-6">
+        <div class="heading">
+          <button class="expand_button pure-button pure-button-primary" rel="toggleContent">
+            <span id="plus_or_minus">+</span><span id="minus_or_plus">-</span></button>
+          <h2>Technical Skills</h2>
+        </div>
+        <div id="content1" class="content">
+          <p>&nbsp</p>
+          <div>
+            <ul class="dash">
+              <li id="first_bullet_point">Programming languages worked with are listed on the right-hand column</li>
+              <li id="first_bullet_point_alt">Programming languages worked with are listed on the bottom of page</li>
+              <li>Experienced use of programming tools, platforms, and IDEs such as Git, Eclipse and Visual Studio</li>
+              <li>Thorough knowledge of Linux and Windows desktop and server operating systems</li>
+              <li>Very strong mathematical foundation</li>
+              <li>Courses taken during school include:
+                <ul class="courses_list dash">
+                  <li>PC Hardware & Software</li>
+                  <li>Linux and Windows Administration</li>
+                  <li>Web page Development</li>
+                  <li>Data Communications</li>
+                  <li>Scripting</li>
+                  <li>Software Design Fundamentals</li>
+                  <li>Databases</li>
+                  <li>Computer Architecture</li>
+                  <li>Theory of Computation</li>
+                  <li>Operating Systems</li>
+                  <li>Computational Physics</li>
+                  <li>Mathematics for Computing</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="heading">
+          <button class="expand_button pure-button pure-button-primary" rel="toggleContent">+</button>
+          <h2>Core Competencies</h2>
+        </div>
+        <div id="content2" class="content">
+          <p>&nbsp</p>
+          <ul class="dash">
+            <li>Strong communication, analytical, and problem solving skills</li>
+            <li>Confident personality, motivated, with an honest, patient, and positive attitude</li>
+            <li>Very quick learner, organized and accurate, with a desire to continuously learn</li>
+            <li>Adept at multitasking and managing time effectively in any fast-paced environment</li>
+          </ul>
+        </div>
+
+        <div class="heading">
+          <button class="expand_button pure-button pure-button-primary" rel="toggleContent">+</button>
+          <h2>Education</h2>
+        </div>
+        <div id="content3" class="content">
+          <p>&nbsp</p>
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-3-5 pure-u-1-1">
+              <span class="bold">Computer Networking and Technical Support Diploma</span><br />
+              <span>St. Lawrence College, Kingston ON</span>
+            </div>
+            <div class="right_just pure-u-md-2-5 pure-u-1-1">
+              <span>Class of 2016</span><br />
+              <span>Overall GPA of 3.8</span>
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Learned the inner workings of computer networks and how to set up and maintain these systems</li>
+            <li>Learned how to effectively utilize Windows and Linux based servers to run faster, focusing on security</li>
+            <li>Gathered experience in server-side validating, processing, and interacting with databases and web page forms</li>
+          </ul>
+          <br />
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-3-5 pure-u-1-1">
+              <span class="bold">Bachelor of Science in Physics</span><br />
+              <span>McMaster University, Hamilton ON</span>
+            </div>
+            <div class="right_just pure-u-md-2-5 pure-u-1-1">
+              <span>Class of 2014</span><br />
+              <span>Overall GPA of 3.3</span>
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Took courses to mathematically understand the nature of what we call reality</li>
+            <li>Also learned underlying fundamental principles behind modern-day computers</li>
+            <li>Gathered experience in C++, Python, FORTRAN, and LaTeX programming languages</li>
+          </ul>
+        </div>
+
+        <div class="heading">
+          <button class="expand_button pure-button pure-button-primary" rel="toggleContent">+</button>
+          <h2>Relevant Work Experience</h2>
+        </div>
+        <div id="content4" class="content">
+          <p>&nbsp</p>
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-1-2 pure-u-1-1">
+              <span class="bold">Computer Bench Technician</span><br />
+              <span>ResponseIT, Kingston ON</span>
+            </div>
+            <div class="right_just pure-u-md-1-2 pure-u-1-1">
+              <span>Jan 2016 – Apr 2016</span><br />
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Troubleshot hardware and software of various types of desktop, server, and laptop computers</li>
+            <li>Created a server capable of installing different versions of the Windows operating system remotely</li>
+            <li>Went on several service calls to diagnose and fix urgent technical issues</li>
+            <li>Exposed to other areas of technology including IP phone systems, virtualization (mainly with vSphere), remote accessing, hard drive cloning software, and determining evidence of water damage to electronics</li>
+            <li>Learned the business aspect to the information technology field</li>
+          </ul>
+          <br />
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-1-2 pure-u-1-1">
+              <span class="bold">Community Living Aide</span><br />
+              <span>Sunbeam Community & Developemental Services, Kitchener ON</span>
+            </div>
+            <div class="right_just pure-u-md-1-2 pure-u-1-1">
+              <span>Sept 2020 - Present</span><br />
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Responsible for the wellbeing of 3 residents in the group home, often working independently</li>
+            <li>Perform a wide range of administrative and residential duties, also volunteering to play guitar and sing songs</li>
+            <li>Proficient at charting necessary information, and completing reports by the end of the shift</li>
+            <li>Often fixing technical issues around the group home, such as residents’ electronic devices, and the printer</li>
+          </ul>
+          <br />
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-1-2 pure-u-1-1">
+              <span class="bold">Residential Supervisor</span><br />
+              <span>Safe Management Group Inc, Oakville ON</span>
+            </div>
+            <div class="right_just pure-u-md-1-2 pure-u-1-1">
+              <span>Feb 2020 – Sept 2020</span><br />
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Continued to perform the same duties as my role as a Behaviour Intervention Specialist as listed in the "Older Work Experience" section below</li>
+            <li>Was responsible for the wellbeing of 6 clients in the treatment home, being on-call to over 40 staff</li>
+            <li>Trained new staff during orientation and on an ongoing basis on residential and administrative duties, SmartMeds pharmacy protocols, and proper procedures when implementing behaviour support plans</li>
+            <li>Organized the inventory of groceries and household supplies, and logistics behind delivering them every week</li>
+            <li>Completed monthly expense forms with budgets for all supplies purchased for each client and the house</li>
+            <li>Fixed a wide assortment of technical issues, and helped set up and maintain the staff desktop, the printer, and the CCTV cameras for the house</li>
+          </ul>
+          <br />
+        </div>
+
+        <div class="heading">
+          <button class="expand_button pure-button pure-button-primary" rel="toggleContent">+</button>
+          <h2>Older Work Experience</h2>
+        </div>
+        <div id="content4" class="content">
+          <p>&nbsp</p>
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-1-2 pure-u-1-1">
+              <span class="bold">Behaviour Intervention Specialist</span><br />
+              <span>Safe Management Group Inc, Oakville, ON</span>
+            </div>
+            <div class="right_just pure-u-md-1-2 pure-u-1-1">
+              <span>Jan 2018 – Feb 2020</span><br />
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Integral member of a specialized team treating and caring for residents with acute anti-social behaviours</li>
+            <li>Utilized crisis intervention, de-escalation tactics, and collaborative problem solving on a daily basis</li>
+            <li>Consistently demonstrated a positive and calm attitude, especially when in stressful situations</li>
+            <li>Promoted to be primarily responsible for the administrative account of one of the residents in Sept 2018</li>
+            <li>Accepted an 8 month long contract with Community Living North Halton, from May 2019 – Jan 2020</li>
+          </ul>
+          <br />
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-1-2 pure-u-1-1">
+              <span class="bold">Math and Physics Tutor</span><br />
+              <span>Club Z! In-Home Tutoring Services, Oakville ON</span>
+            </div>
+            <div class="right_just pure-u-md-1-2 pure-u-1-1">
+              <span>Oct 2017 – Oct 2018</span><br />
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Tutored students in high school math and physics, teaching concepts and proper techniques</li>
+            <li>Scheduled the sessions with the student or their parents</li>
+            <li>Ensured constant communication, keeping their parents up-to-date on their progress</li>
+          </ul>
+          <br />
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-1-2 pure-u-1-1">
+              <span class="bold">Sales Associate</span><br />
+              <span>Dollarama, Mississauga, ON</span>
+            </div>
+            <div class="right_just pure-u-md-1-2 pure-u-1-1">
+              <span>July 2017 – Feb 2018</span><br />
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Skilled at merchandising, inventory, and cashiering</li>
+            <li>Often opened and closed the store independently</li>
+          </ul>
+          <br />
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-1-2 pure-u-1-1">
+              <span class="bold">Industrial Cleaning Technician</span><br />
+              <span>Pressure Kleen Services, Etobicoke ON</span>
+            </div>
+            <div class="right_just pure-u-md-1-2 pure-u-1-1">
+              <span>Summer 2015,  Jun 2016 – Jan 2017</span><br />
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Cleaned kitchen exhaust and garbage disposal systems, underground parking lots, and City of Toronto park facilities using pressure washing equipment</li>
+            <li>Met with clients to specify scope of work, cleaned as much as possible in a time-constrained setting</li>
+            <li>Organized the logistics of transporting equipment to the site, often driving through busy streets</li>
+            <li>Always followed proper safety protocols to ensure the safety of myself and those around me</li>
+          </ul>
+          <br />
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-1-2 pure-u-1-1">
+              <span class="bold">Math Tutor</span><br />
+              <span>St. Lawrence College, Kingston ON</span>
+            </div>
+            <div class="right_just pure-u-md-1-2 pure-u-1-1">
+              <span>Sep 2014 – Dec 2014</span><br />
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Organized the meeting time and place, ensuring a quiet and comfortable learning environment</li>
+            <li>Articulated clear explanations for the material covered</li>
+            <li>Made sure student's questions were always fully answered</li>
+            <li>Assured student was maintaining a balanced understanding of the material</li>
+          </ul>
+          <br />
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-1-2 pure-u-1-1">
+              <span class="bold">Amusement Device Mechanic</span><br />
+              <span>Checkers Fun Factory, Hamilton ON</span>
+            </div>
+            <div class="right_just pure-u-md-1-2 pure-u-1-1">
+              <span>Summer 2013</span><br />
+            </div>
+          </div>
+          <ul class="dash">
+            <li>With the help of one or two others, loaded company trucks with equipment to bring to site</li>
+            <li>Assembled and dismantled bouncy castles and other carnival equipment within requested time period</li>
+            <li>Ensured bouncy castles where securely in place with large metal stakes</li>
+            <li>Supervised children, always enforcing the acceptable safety limit according to specified guidelines</li>
+          </ul>
+          <br />
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-1-2 pure-u-1-1">
+              <span class="bold">Physics Research Scientist</span><br />
+              <span>Xerox Research Centre of Canada, Mississauga ON</span>
+            </div>
+            <div class="right_just pure-u-md-1-2 pure-u-1-1">
+              <span>Summer 2012</span><br />
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Designed a computer program to control the automation of delivering a developer and toner mixture to the housing apparatus of a photocopier</li>
+            <li>Interfaced the apparatus to a controller that inputted values to the LABVIEW programming environment</li>
+            <li>Worked independently and under pressure to test certain properties of toner</li>
+          </ul>
+          <br />
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-1-2 pure-u-1-1">
+              <span class="bold">Factory Worker</span><br />
+              <span>Fourmark, Oakville ON</span>
+            </div>
+            <div class="right_just pure-u-md-1-2 pure-u-1-1">
+              <span>Summer 2011</span><br />
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Packaged plastic containers into boxes from an assembly line</li>
+            <li>Always punctual and put safety first</li>
+          </ul>
+          <br />
+          <div class="pure-g">
+            <div class="inner_heading pure-u-md-1-2 pure-u-1-1">
+              <span class="bold">Cashier</span><br />
+              <span>Sobeys, Mississauga ON</span>
+            </div>
+            <div class="right_just pure-u-md-1-2 pure-u-1-1">
+              <span>Sep 2008 – Nov 2010</span><br />
+            </div>
+          </div>
+          <ul class="dash">
+            <li>Rang grocery items through the register and efficiently bagged them for the customer</li>
+            <li>Handled cash, and was very friendly and helpful </li>
+            <li>Often put in charge of the customer service desk</li>
+          </ul>
+          <br />
+        </div>
+
+        <div class="heading">
+          <button class="expand_button pure-button pure-button-primary" rel="toggleContent">+</button>
+          <h2>Interests</h2>
+        </div>
+        <div id="content5" class="content">
+          <p>&nbsp</p>
+          <ul class="dash">
+            <li>Computers</li>
+            <li>Playing drums</li>
+            <li>Playing guitar</li>
+            <li>Listening to music</li>
+            <li>Reading</li>
+            <li>Meditating</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="right_col pure-u-md-1-4 pure-u-1-1">
+        <p>The languages I am familiar with include:</p>
+        <ul class="dash">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>Python</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>FORTRAN</li>
+          <li>MATLAB</li>
+          <li>LabVIEW</li>
+          <li>LaTeX</li>
+          <li>And I am always interested in learning more!</li>
+        </ul>
+        <!-- disabled the clock for this page <div id="analog_clock"></div> -->
+      </div>
+    </div>
+
+    <!-- This is to mimic the above layout, but keep the text below the right column when it becomes pure-u-1-1 -->
+    <div class="references_heading pure-g">
+      <div class="pure-u-1-12"></div>
+      <div class="pure-u-md-2-3 pure-u-5-6">
+        <p>&nbsp</p>
+        <h3>References Available Upon Request</h3>
+      </div>
+      <div class="pure-u-md-1-4 pure-u-1-1"></div>
+    </div>
+
+  </div>
+
+
+
+  </div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
