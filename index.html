@@ -1,28 +1,66 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
-<!-- a webpage
-    coded by Kevin Craig -->
 <head>
-    <meta charset="UTF=8" />
-    <title>Welcome.</title>
-    <link rel="stylesheet" type="text/css" href="css/home.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="scripts/circle.js"></script>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Welcome to my site!</title>
+  <meta name="description" content="Kevin Craig's Website">
+  <meta name="author" content="KEVIN CRAIG">
+  <!-- Specifically for facebook -->
+  <meta property="og:title" content="Welcome to my website!">
+  <meta property="og:url" content="http://www.kevinmmcraig.ca">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:700,700i" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/pure@0.6.1(base-min.css+grids-min.css)">
+  <link rel="stylesheet" href="c/home.css">
+
+  <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="scripts/home.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="shortcut icon" href="images/favicon.ico" />
+
 </head>
 <body>
-    <div id="header">
-        Welcome. <br /> Please choose where you'd like to go. <br /> Resize the window, it'll refresh!
-    </div>
-    <div id="mainer">
-    </div>
-    <div id="output_div">
-    </div>
-    <div id="analog_clock">
-    </div>
-    <div id="footer">
-        Kevin Craig &copy; 2014
-    </div>
-</body>
 
-</html>
+  <div id="mainer">
+
+    <div id="squareit">
+      <div class="wrapper">
+
+        <h1>
+          <a href="http://kevinmmcraig.ca">
+            <!--  any spaces between the <span> elements will ruin the layout
+                  good: "<span>ke</span><span>vin</span>"
+                  bad:  "<span>ke</span> <span>vin</span>"
+            -->
+
+            <span>KEVIN</span
+            ><span>MMCR</span
+            ><span>AIG<span class="dot">.</span>CA</span>
+          </a>
+        </h1>
+
+    </div> <!-- end of .wrapper -->
+  </div>
+
+  <div id="analog_clock"></div>
+
+  </div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
