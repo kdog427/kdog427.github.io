@@ -17,19 +17,23 @@ var realminute, mkeepsake = 0;
 var windowWidth, windowHeight;
 
 //function that runs when page is finished loading
-$(document).ready(function() {
+(function($) {
+    $(document).ready(function() {
+        $(".new_sel_num").keypress(function (e) {
+            var key = e.which;
+            if(key == 13)  // the enter key code
+            {
+                new_selection();  
+            }
 
-    $("#new_sel_num").keypress(function (e) {
-        var key = e.which;
-        if(key == 13)  // the enter key code
-        {
-            new_selection();  
-        }
-    });
+        });
+    
+        initialize_me();
 
-    initialize_me();
+    })
 
-})
+
+})(jQuery);
 
 
 function initialize_me()
