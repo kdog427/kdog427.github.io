@@ -15,15 +15,12 @@ var realminute, mkeepsake = 0;
 var windowWidth, windowHeight;
 
 //function that runs when page is finished loading
-(function($) {
-    $(document).ready(function() {
-    
-        initialize_me();
+$(document).ready(function(){
 
-    })
+    initialize_me();
 
+})
 
-})(jQuery);
 
 function initialize_me()
 {
