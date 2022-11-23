@@ -260,6 +260,18 @@ ul.courses_list {
   padding-bottom: 4em;
 }
 
+p.pad_the_top {
+  padding-top: 0.75em;
+}
+ul.feature_list {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+ul.feature_list li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;  
+}
+
 
 /* deals exclusively with contact page */
 

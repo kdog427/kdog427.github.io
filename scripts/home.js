@@ -184,10 +184,10 @@ function display_sels(num)
 {
     if (num < numberofsel) {
         if (num == 0) {
-            $("#selection" + num).css("display", "block").fadeIn(600);
-            setT_sel = setTimeout(function(){display_sels(num + 1)}, 1000);
+            $("#selection" + num).css("display", "block").fadeIn(10000);
+            setT_sel = setTimeout(function(){display_sels(num + 1)}, 500);
         } else {
-            $("#selection" + num).css("display", "block").fadeIn(300);
+            $("#selection" + num).css("display", "block").fadeIn(6000);
             setT_sel = setTimeout(function(){display_sels(num + 1)}, 400);
         }
     }
