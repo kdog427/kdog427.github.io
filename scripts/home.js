@@ -1,14 +1,14 @@
 
 //declarations of them global variables
-var numberofsel = 4;
+var numberofsel = 5;
 var size = 60000;
 var quarter = size/4;
 var half = size/2;
 var threequart = 3*size/4;
 
-var sel_txt_array = ["Resume", "About", "Contact", "My Menu", "Google!"];
+var sel_txt_array = ["Resume", "About", "Contact", "My Menu", "Portfolio", "Google!"];
 
-var sel_link_array = ["resume.html", "about.html", "contact.html", "menu.html", "http://www.google.com"];
+var sel_link_array = ["resume.html", "about.html", "contact.html", "menu.html", "portfolio.html", "http://www.google.com"];
 var clock_txt_array = ["12", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
 
 var setT_clock, setT_sel;
@@ -184,10 +184,10 @@ function display_sels(num)
 {
     if (num < numberofsel) {
         if (num == 0) {
-            $("#selection" + num).css("display", "block").fadeIn(10000);
-            setT_sel = setTimeout(function(){display_sels(num + 1)}, 500);
+            $("#selection" + num).css("display", "block").fadeIn(600);
+            setT_sel = setTimeout(function(){display_sels(num + 1)}, 1000);
         } else {
-            $("#selection" + num).css("display", "block").fadeIn(6000);
+            $("#selection" + num).css("display", "block").fadeIn(300);
             setT_sel = setTimeout(function(){display_sels(num + 1)}, 400);
         }
     }
